@@ -1,0 +1,185 @@
+[
+  {
+	"day_name": "monday",
+	"day_number": "2",
+	"events": [
+	  {
+		"name": "Calculus 1A - Differential Calculus",
+		"detail": "MA121B/Lecture",
+		"time_format": "hour",
+		"time_start": "9",
+		"time_end": "",
+		"time_name": "AM",
+		"location": "X106"
+	  },
+	  {
+		"name": "Knowledge, Nature, Culture",
+		"detail": "CAL105E/Lecture",
+		"time_format": "hour",
+		"time_start": "10",
+		"time_end": "",
+		"time_name": "AM",
+		"location": "BC220"
+	  },
+	  {
+		"name": "Mechanics",
+		"detail": "PEP111B/Lecture",
+		"time_format": "hour",
+		"time_start": "11",
+		"time_end": "",
+		"time_name": "AM",
+		"location": "BC122"
+	  },
+	  {
+		"name": "Intro Comp-Sci Honors",
+		"detail": "CS181A/Lecture",
+		"time_format": "hour",
+		"time_start": "12",
+		"time_end": "",
+		"time_name": "PM",
+		"location": "X104"
+	  },
+	  {
+		"name": "Intro to Web Dev",
+		"detail": "CS146B/Lecture",
+		"time_format": "hour",
+		"time_start": "2",
+		"time_end": "",
+		"time_name": "PM",
+		"location": "E330"
+	  }
+	]
+  },
+  {
+	"day_name": "tuesday",
+	"day_number": "3",
+	"events": [
+	  {
+		"name": "Calculus 1A - Differential Calculus",
+		"detail": "MA121RE/Recitation",
+		"time_format": "hour",
+		"time_start": "9",
+		"time_end": "",
+		"time_name": "AM",
+		"location": "Peirce 220"
+	  },
+	  {
+		"name": "Intro Comp-Sci Honors",
+		"detail": "CS181LA/Lab",
+		"time_format": "hour",
+		"time_start": "11",
+		"time_end": "",
+		"time_name": "AM",
+		"location": "B514"
+	  },
+	  {
+		"name": "Intro to Web Dev",
+		"detail": "CS146B/Lecture",
+		"time_format": "hour",
+		"time_start": "2",
+		"time_end": "",
+		"time_name": "PM",
+		"location": "E330"
+	  },
+	  {
+		"name": "Mechanics",
+		"detail": "PEP111RF/Recitation",
+		"time_format": "hour",
+		"time_start": "3",
+		"time_end": "5",
+		"time_name": "PM",
+		"location": "E229"
+	  }
+	]
+  },
+  {
+	"day_name": "wednesday",
+	"day_number": "4",
+	"events": [
+	  {
+		"name": "Calculus 1A - Differential Calculus",
+		"detail": "MA121RE/Recitation",
+		"time_format": "hour",
+		"time_start": "9",
+		"time_end": "",
+		"time_name": "AM",
+		"location": "X106"
+	  },
+	  {
+		"name": "Knowledge, Nature, Culture",
+		"detail": "CAL105E/Lecture",
+		"time_format": "hour",
+		"time_start": "10",
+		"time_end": "12",
+		"time_name": "AM",
+		"location": "BC220"
+	  },
+	  {
+		"name": "Intro Comp-Sci Honors",
+		"detail": "CS181A/Lecture",
+		"time_format": "hour",
+		"time_start": "12",
+		"time_end": "",
+		"time_name": "PM",
+		"location": "X119"
+	  }
+	]
+  },
+  {
+	"day_name": "thursday",
+	"day_number": "5",
+	"events": [
+	  {
+		"name": "Calculus 1A - Differential Calculus",
+		"detail": "MA121B/Lecture",
+		"time_format": "hour",
+		"time_start": "9",
+		"time_end": "",
+		"time_name": "AM",
+		"location": "X106"
+	  },
+	  {
+		"name": "Intro Comp-Sci Honors",
+		"detail": "CS181A/Lecture",
+		"time_format": "hour",
+		"time_start": "12",
+		"time_end": "",
+		"time_name": "PM",
+		"location": "X104"
+	  },
+	  {
+		"name": "Intro to Web Dev",
+		"detail": "CS146B/Lecture",
+		"time_format": "hour",
+		"time_start": "2",
+		"time_end": "",
+		"time_name": "PM",
+		"location": "E330"
+	  }
+	]
+  },
+  {
+	"day_name": "friday",
+	"day_number": "6",
+	"events": [
+	  {
+		"name": "Calculus 1A - Differential Calculus",
+		"detail": "MA121RE/Recitation",
+		"time_format": "hour",
+		"time_start": "9",
+		"time_end": "",
+		"time_name": "AM",
+		"location": "Peirce 220"
+	  },
+	  {
+		"name": "Mechanics",
+		"detail": "PEP111B/Lecture",
+		"time_format": "hour",
+		"time_start": "10",
+		"time_end": "",
+		"time_name": "AM",
+		"location": "BC122"
+	  }
+	]
+  }
+]

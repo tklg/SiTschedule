@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Schedule</string>
+
+    <string name="title_section1">Schedule</string>
+    <string name="title_section2">Settings</string>
+    <string name="title_section3">Account</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="placeholder">Placeholder</string>
+
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+
+    <string name="icon_ellipsis_v">&#xf142;</string>
+    <string name="icon_delete">&#xf014;</string>
+    <string name="icon_upload">&#xf093;</string>
+    <string name="icon_download">&#xf019;</string>
+    <string name="icon_rename">&#xf044;</string>
+    <string name="icon_refresh">&#xf021;</string>
+    <string name="icon_warning">&#xf071;</string>
+    <string name="icon_link">&#xf0c1;</string>
+</resources>
