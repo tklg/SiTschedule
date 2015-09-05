@@ -1,5 +1,20 @@
 [
   {
+	"day_name": "sunday",
+	"day_number": "1",
+	"events": [
+	  {
+		"name": "",
+		"detail": "",
+		"time_format": "hour",
+		"time_start": "0",
+		"time_end": "",
+		"time_name": "AM",
+		"location": ""
+	  }
+	]
+  },
+  {
 	"day_name": "monday",
 	"day_number": "2",
 	"events": [
@@ -179,6 +194,21 @@
 		"time_end": "",
 		"time_name": "AM",
 		"location": "BC122"
+	  }
+	]
+  },
+  {
+	"day_name": "saturday",
+	"day_number": "7",
+	"events": [
+	  {
+		"name": "",
+		"detail": "",
+		"time_format": "hour",
+		"time_start": "0",
+		"time_end": "",
+		"time_name": "AM",
+		"location": ""
 	  }
 	]
   }

@@ -72,7 +72,9 @@ public class ScheduleItem {
                 e.printStackTrace();
             }
         }
+        if (events == null) {
 
+        }
         return events;
     }
 }

@@ -2,12 +2,67 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
     android:layout_width="match_parent" android:layout_height="match_parent"
+    fitSystemWindows="true"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:attr/actionBarSize"
+            android:background="@color/main">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder"
+                android:id="@+id/toolbar_title"
+                android:textSize="20sp"
+                android:textColor="@color/text_main" />
+            <!--<LinearLayout
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:id="@+id/calendar_clock"
+                android:background="@color/main"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="64sp"
+                    android:text="@string/placeholder"
+                    android:id="@+id/calendar_clock_date"
+                    android:gravity="left|bottom"
+                    android:textColor="@color/text_main"
+                    android:textSize="50sp"
+                    android:textIsSelectable="false"
+                    android:paddingLeft="10sp"
+                    android:paddingBottom="0dp" />
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="64sp"
+                    android:id="@+id/calendar_clock_time"
+                    android:textSize="37sp"
+                    android:gravity="top|left"
+                    android:textColor="@color/text_main"
+                    android:layout_above="@+id/calendar_content"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="10sp" />
+
+            </LinearLayout>-->
+        </Toolbar>
+
+        <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </LinearLayout>
     <!-- As the main content view, the view below consumes the entire
          space available using match_parent in both dimensions. -->
-    <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat
          this as a sliding drawer on the left side for left-to-right

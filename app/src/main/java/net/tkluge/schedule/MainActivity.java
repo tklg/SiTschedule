@@ -4,10 +4,20 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.pm.PackageInfo;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.text.Html;
+import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.TextView;
+import android.widget.Toolbar;
 
 public class MainActivity extends Activity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
@@ -27,14 +37,41 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        try {
+            PackageInfo pInfo = getApplicationContext().getPackageManager().getPackageInfo(getPackageName(), 0);
+            String version_name = pInfo.versionName;
+            int version_code = pInfo.versionCode;
+            if (version_code < Build.VERSION_CODES.LOLLIPOP) {
+
+            } else {
+                toolbar.setPadding(0, dp2px(24), 0, 0);
+            }
+        } catch (Exception e) {
+
+        }
+        setActionBar(toolbar);
+
+        //ActionBar bar = getActionBar();
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        //window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        //getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+        window.setStatusBarColor(this.getResources().getColor(R.color.main_dark));
+        //bar.setBackgroundDrawable(new ColorDrawable(this.getResources().getColor(R.color.main)));
+        //bar.setElevation(0);
+
+        //moved to the sub fragments (schedulefragment etc)
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
-        mTitle = getTitle();
 
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+        TextView toolbarTitle = (TextView) findViewById(R.id.toolbar_title);
+        mTitle = toolbarTitle.getText();
     }
 
     @Override
@@ -82,9 +119,12 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
 
     public void restoreActionBar() {
         ActionBar actionBar = getActionBar();
+        TextView toolbarTitle = (TextView) findViewById(R.id.toolbar_title);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setTitle(mTitle);
+        //actionBar.setTitle(mTitle);
+        toolbarTitle.setText(mTitle);
+        setTitle("");
     }
 
 
@@ -114,5 +154,8 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
         }*/
 
         return super.onOptionsItemSelected(item);
+    }
+    public int dp2px(int dp) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics());
     }
 }

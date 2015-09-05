@@ -3,10 +3,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity$PlaceholderFragment">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="128sp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/calendar_clock"
+        android:layout_alignParentStart="false"
+        android:background="@color/main"
+        android:elevation="7dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64sp"
+            android:text="@string/placeholder"
+            android:id="@+id/calendar_clock_date"
+            android:gravity="left|bottom"
+            android:textColor="@color/text_main"
+            android:textSize="50sp"
+            android:textIsSelectable="false"
+            android:paddingLeft="10sp"
+            android:paddingBottom="0dp" />
+
+        <TextClock
+            android:layout_width="match_parent"
+            android:layout_height="64sp"
+            android:id="@+id/calendar_clock_time"
+            android:textSize="37sp"
+            android:gravity="top|left"
+            android:textColor="@color/text_main"
+            android:layout_above="@+id/calendar_content"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10sp" />
+
+    </LinearLayout>
+
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/calendar_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/calendar_clock"
+        android:smoothScrollbar="true"
+        android:stackFromBottom="false"
+        android:overScrollHeader="@color/main" />
+
 </RelativeLayout>

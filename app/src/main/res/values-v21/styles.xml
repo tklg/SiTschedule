@@ -1,5 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="android:Theme.Material.Light">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <!--<item name="android:actionBarStyle">@style/AppTheme.ActionBarStyle</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <!--<item name="windowActionBar">false</item>-->
+        <item name="android:colorPrimary">@color/main</item>
+        <item name="android:colorPrimaryDark">@color/main_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
     </style>
+    <!--<style name="AppTheme.ActionBarStyle" parent="@android:style/Widget.Material">-->
+    <!--<item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">-->
+    <!--<item name="android:textColor">@color/text_main</item>-->
+    <!--</style>-->
+
 </resources>

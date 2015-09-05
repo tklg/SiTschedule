@@ -78,5 +78,4 @@ class F {
             throw new NullPointerException("F.pm(Map m) cannot be null");
         }
     }
-
 }
