@@ -4,33 +4,179 @@
     tools:context=".MainActivity$PlaceholderFragment"
     android:id="@+id/settings_content">
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:text="Src" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText4"
-        android:layout_below="@+id/editText3"
-        android:layout_alignStart="@+id/editText3"
-        android:text="a" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:divider="@color/accent">
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText5"
-        android:layout_below="@+id/editText4"
-        android:layout_alignParentStart="true"
-        android:text="b" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Icon"
+                android:id="@+id/textView"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:textColor="@color/text_content" />
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText6"
-        android:layout_below="@+id/editText5"
-        android:layout_alignParentStart="true"
-        android:text="c" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/placeholder"
+                    android:id="@+id/textView2"
+                    android:gravity="bottom"
+                    android:paddingBottom="4dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/placeholder"
+                    android:id="@+id/textView3"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/text_content_2" />
+            </LinearLayout>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/switch1"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:checked="true"
+                android:paddingRight="10dp"
+                android:trackTint="@color/accent"
+                android:thumbTint="@color/main"
+                android:thumbTintMode="src_over"
+                android:trackTintMode="src_over"
+                android:splitTrack="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:divider="@color/accent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Icon"
+                android:id="@+id/textView4"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:textColor="@color/text_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".4" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/placeholder"
+                    android:id="@+id/textView5"
+                    android:gravity="bottom"
+                    android:paddingBottom="4dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/placeholder"
+                    android:id="@+id/textView6"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/text_content_2" />
+            </LinearLayout>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/switch2"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:checked="false"
+                android:paddingRight="10dp"
+                android:trackTint="@color/accent"
+                android:thumbTint="@color/main"
+                android:thumbTintMode="src_over"
+                android:trackTintMode="src_over"
+                android:splitTrack="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:divider="@color/accent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Icon"
+                android:id="@+id/textView7"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:textColor="@color/text_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".4" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/placeholder"
+                    android:id="@+id/textView8"
+                    android:gravity="bottom"
+                    android:paddingBottom="4dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/placeholder"
+                    android:id="@+id/textView9"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/text_content_2" />
+            </LinearLayout>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/switch3"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:checked="false"
+                android:paddingRight="10dp"
+                android:trackTint="@color/accent"
+                android:thumbTint="@color/main"
+                android:thumbTintMode="src_over"
+                android:trackTintMode="src_over"
+                android:splitTrack="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>

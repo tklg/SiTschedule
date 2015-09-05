@@ -20,7 +20,8 @@
             android:nestedScrollingEnabled="false"
             android:singleLine="true"
             android:textSize="25sp"
-            android:gravity="bottom|right" />
+            android:gravity="bottom|right"
+            android:textColor="@color/text_content" />
 
         <TextView
             android:layout_width="match_parent"
@@ -30,7 +31,8 @@
             android:textStyle="italic"
             android:textSize="15sp"
             android:gravity="top|right"
-            android:paddingRight="10sp" />
+            android:paddingRight="10sp"
+            android:textColor="@color/text_content_2" />
     </LinearLayout>
 
     <LinearLayout
@@ -52,7 +54,8 @@
             android:textStyle="bold"
             android:typeface="sans"
             android:gravity="bottom"
-            android:textSize="17sp" />
+            android:textSize="17sp"
+            android:textColor="@color/text_content" />
 
         <TextView
             android:layout_width="fill_parent"
@@ -65,7 +68,8 @@
             android:singleLine="true"
             android:typeface="sans"
             android:gravity="top"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textColor="@color/text_content_2" />
     </LinearLayout>
 
 </LinearLayout>

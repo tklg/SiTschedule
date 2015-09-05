@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Daily Schedule</string>
+    <string name="app_name">SiTschedule</string>
 
-    <string name="title_section1">@string/app_name</string>
+    <string name="title_section1">Daily Schedule</string>
     <string name="title_section2">App Settings</string>
-    <string name="title_section3">My Account</string>
+    <string name="title_section3">Manage Schedules</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

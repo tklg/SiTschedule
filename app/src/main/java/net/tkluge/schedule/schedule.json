@@ -104,6 +104,15 @@
 		"time_end": "5",
 		"time_name": "PM",
 		"location": "E229"
+	  },
+	  {
+		"name": "Freshman Quiz",
+		"detail": "",
+		"time_format": "hour",
+		"time_start": "5",
+		"time_end": "",
+		"time_name": "PM",
+		"location": ""
 	  }
 	]
   },
@@ -194,6 +203,15 @@
 		"time_end": "",
 		"time_name": "AM",
 		"location": "BC122"
+	  },
+	  {
+		"name": "Freshman Quiz",
+		"detail": "",
+		"time_format": "hour",
+		"time_start": "3",
+		"time_end": "",
+		"time_name": "PM",
+		"location": ""
 	  }
 	]
   },

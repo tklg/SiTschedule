@@ -11,7 +11,7 @@
         android:id="@+id/calendar_clock"
         android:layout_alignParentStart="false"
         android:background="@color/main"
-        android:elevation="7dp"
+        android:elevation="7px"
         android:gravity="center_vertical">
 
         <TextView

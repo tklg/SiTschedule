@@ -5,15 +5,12 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.pm.PackageInfo;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.text.Html;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -88,7 +85,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
                 fragment = new SettingsFragment();
                 break;
             case 3:
-                fragment = new AccountFragment();
+                fragment = new ManagerFragment();
                 break;
             default:
                 fragment = new ScheduleFragment();

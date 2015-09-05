@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 /**
  * Created by kluget on 9/2/2015.
  */
-public class AccountFragment extends Fragment {
+public class ManagerFragment extends Fragment {
     /**
      * The fragment argument representing the section number for this
      * fragment.
@@ -21,22 +21,22 @@ public class AccountFragment extends Fragment {
      * Returns a new instance of this fragment for the given section
      * number.
      */
-   /* public static AccountFragment newInstance(int sectionNumber) {
-        AccountFragment fragment = new AccountFragment();
+   /* public static ManagerFragment newInstance(int sectionNumber) {
+        ManagerFragment fragment = new ManagerFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
         fragment.setArguments(args);
         return fragment;
     }*/
-    public AccountFragment() {
-        //AccountFragment fragment = new AccountFragment();
+    public ManagerFragment() {
+        //ManagerFragment fragment = new ManagerFragment();
         //return fragment;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_account, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_manager, container, false);
 
         getActivity().getActionBar().setElevation(7);
 

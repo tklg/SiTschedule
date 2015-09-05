@@ -7,7 +7,7 @@
     android:layout_height="178dp"
     android:id="@+id/nav_drawer_header"
     android:gravity="bottom"
-    android:padding="20dp"
+    android:padding="15dp"
     android:background="@drawable/gray"
     android:minHeight="178dp">
 
