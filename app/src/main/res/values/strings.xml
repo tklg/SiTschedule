@@ -5,15 +5,9 @@
     <string name="title_section2">App Settings</string>
     <string name="title_section3">Manage Schedules</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
 
     <string name="placeholder">Placeholder</string>
-
-    <string name="hint_username">Username</string>
-    <string name="hint_password">Password</string>
 
     <string name="icon_ellipsis_v">&#xf142;</string>
     <string name="icon_delete">&#xf014;</string>
@@ -23,4 +17,10 @@
     <string name="icon_refresh">&#xf021;</string>
     <string name="icon_warning">&#xf071;</string>
     <string name="icon_link">&#xf0c1;</string>
+
+    <string name="settings_push_header">Pop-up notification</string>
+    <string name="settings_push_detail">Let the app remind you about stuff</string>
+    <string name="settings_reminder_time_header">Default reminder time</string>
+    <string name="settings_reminder_sound">Sound</string>
+    <string name="settings_reminder_vibrate">Vibrate</string>
 </resources>

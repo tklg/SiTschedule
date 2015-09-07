@@ -19,7 +19,7 @@
 	"day_number": "2",
 	"events": [
 	  {
-		"name": "Calculus 1A - Differential Calculus",
+		"name": "Calculus 1A",
 		"detail": "MA121B/Lecture",
 		"time_format": "hour",
 		"time_start": "9",
@@ -46,7 +46,7 @@
 		"location": "BC122"
 	  },
 	  {
-		"name": "Intro Comp-Sci Honors",
+		"name": "Intro Comp Sci Honors",
 		"detail": "CS181A/Lecture",
 		"time_format": "hour",
 		"time_start": "12",
@@ -70,7 +70,7 @@
 	"day_number": "3",
 	"events": [
 	  {
-		"name": "Calculus 1A - Differential Calculus",
+		"name": "Calculus 1A",
 		"detail": "MA121RE/Recitation",
 		"time_format": "hour",
 		"time_start": "9",
@@ -79,7 +79,7 @@
 		"location": "Peirce 220"
 	  },
 	  {
-		"name": "Intro Comp-Sci Honors",
+		"name": "Intro Comp Sci Honors",
 		"detail": "CS181LA/Lab",
 		"time_format": "hour",
 		"time_start": "11",
@@ -121,7 +121,7 @@
 	"day_number": "4",
 	"events": [
 	  {
-		"name": "Calculus 1A - Differential Calculus",
+		"name": "Calculus 1A",
 		"detail": "MA121RE/Recitation",
 		"time_format": "hour",
 		"time_start": "9",
@@ -139,7 +139,7 @@
 		"location": "BC220"
 	  },
 	  {
-		"name": "Intro Comp-Sci Honors",
+		"name": "Intro Comp Sci Honors",
 		"detail": "CS181A/Lecture",
 		"time_format": "hour",
 		"time_start": "12",
@@ -154,7 +154,7 @@
 	"day_number": "5",
 	"events": [
 	  {
-		"name": "Calculus 1A - Differential Calculus",
+		"name": "Calculus 1A",
 		"detail": "MA121B/Lecture",
 		"time_format": "hour",
 		"time_start": "9",
@@ -163,7 +163,7 @@
 		"location": "X106"
 	  },
 	  {
-		"name": "Intro Comp-Sci Honors",
+		"name": "Intro Comp Sci Honors",
 		"detail": "CS181A/Lecture",
 		"time_format": "hour",
 		"time_start": "12",
@@ -187,7 +187,7 @@
 	"day_number": "6",
 	"events": [
 	  {
-		"name": "Calculus 1A - Differential Calculus",
+		"name": "Calculus 1A",
 		"detail": "MA121RE/Recitation",
 		"time_format": "hour",
 		"time_start": "9",

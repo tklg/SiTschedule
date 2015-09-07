@@ -34,21 +34,14 @@
 
                 <TextView
                     android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:text="@string/placeholder"
+                    android:layout_height="match_parent"
+                    android:text="@string/settings_push_header"
                     android:id="@+id/textView2"
-                    android:gravity="bottom"
                     android:paddingBottom="4dp"
                     android:textStyle="bold"
-                    android:textColor="@color/text_content" />
+                    android:textColor="@color/text_content"
+                    android:gravity="center_vertical" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:text="@string/placeholder"
-                    android:id="@+id/textView3"
-                    android:paddingTop="4dp"
-                    android:textColor="@color/text_content_2" />
             </LinearLayout>
 
             <Switch
@@ -90,7 +83,7 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="50dp"
-                    android:text="@string/placeholder"
+                    android:text="@string/settings_reminder_time_header"
                     android:id="@+id/textView5"
                     android:gravity="bottom"
                     android:paddingBottom="4dp"
@@ -146,7 +139,7 @@
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="50dp"
-                    android:text="@string/placeholder"
+                    android:text="@string/settings_reminder_sound"
                     android:id="@+id/textView8"
                     android:gravity="bottom"
                     android:paddingBottom="4dp"
@@ -166,6 +159,55 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/switch3"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:checked="false"
+                android:paddingRight="10dp"
+                android:trackTint="@color/accent"
+                android:thumbTint="@color/main"
+                android:thumbTintMode="src_over"
+                android:trackTintMode="src_over"
+                android:splitTrack="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:divider="@color/accent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Icon"
+                android:id="@+id/textView10"
+                android:layout_weight=".8"
+                android:gravity="center"
+                android:textColor="@color/text_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".4" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/settings_reminder_vibrate"
+                    android:id="@+id/textView11"
+                    android:paddingBottom="4dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_content"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/switch4"
                 android:layout_weight=".8"
                 android:gravity="center"
                 android:checked="false"

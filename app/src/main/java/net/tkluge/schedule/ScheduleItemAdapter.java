@@ -21,6 +21,7 @@ public class ScheduleItemAdapter extends ArrayAdapter<ScheduleItem> {
     private static class ViewHolder {
         TextView name;
         TextView location;
+        TextView detail;
         Button clickmenu;
         TextView time_start;
         TextView time_end;
@@ -42,6 +43,7 @@ public class ScheduleItemAdapter extends ArrayAdapter<ScheduleItem> {
 
             viewHolder.name = (TextView) convertView.findViewById(R.id.event_name);
             viewHolder.location = (TextView) convertView.findViewById(R.id.event_location);
+            viewHolder.detail = (TextView) convertView.findViewById(R.id.event_detail);
             viewHolder.time_start = (TextView) convertView.findViewById(R.id.event_time_start);
             viewHolder.time_end = (TextView) convertView.findViewById(R.id.event_time_end);
             //viewHolder.clickmenu = (Button) convertView.findViewById(R.id.btn_edit);
@@ -79,6 +81,7 @@ public class ScheduleItemAdapter extends ArrayAdapter<ScheduleItem> {
         //fill template
         viewHolder.name.setText(file.name);
         viewHolder.location.setText(file.location);
+        viewHolder.detail.setText(file.detail);
         viewHolder.time_start.setText(time_start);
         viewHolder.time_end.setText(time_end);
         //viewHolder.clickmenu.setTypeface(Typefaces.get(context, "fontawesome-webfont.ttf"));
