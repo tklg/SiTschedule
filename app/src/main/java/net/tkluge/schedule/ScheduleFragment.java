@@ -1,21 +1,15 @@
 package net.tkluge.schedule;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
@@ -27,7 +21,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Locale;
 
 /**
  * Created by kluget on 9/2/2015.
@@ -41,6 +34,7 @@ public class ScheduleFragment extends Fragment {
     private ListView listView;
     private ScheduleItemAdapter adapter;
     private Context context;
+    private String scheduleToLoad = "schedule.json";
 
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
@@ -78,7 +72,7 @@ public class ScheduleFragment extends Fragment {
 
         JSONArray schedule = null;
 
-        String filepath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/schedule.json";
+        String filepath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/scheduler/" + scheduleToLoad;
         try {
             File f = new File(filepath);
             if (f.exists()) {

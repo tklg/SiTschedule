@@ -2,25 +2,23 @@ package net.tkluge.schedule;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 /**
  * Created by kluget on 9/2/2015.
  */
 public class ManagerFragment extends Fragment {
-    /**
-     * The fragment argument representing the section number for this
-     * fragment.
-     */
-    private static final String ARG_SECTION_NUMBER = "section_number";
 
-    /**
-     * Returns a new instance of this fragment for the given section
-     * number.
-     */
+    private static final String ARG_SECTION_NUMBER = "section_number";
+    private Context context;
+
    /* public static ManagerFragment newInstance(int sectionNumber) {
         ManagerFragment fragment = new ManagerFragment();
         Bundle args = new Bundle();
@@ -37,8 +35,14 @@ public class ManagerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_manager, container, false);
-
+        context = container.getContext();
         getActivity().getActionBar().setElevation(7);
+
+        ArrayList<ManagerItem> schedules = ManagerItem.schedulesToList();
+        ManagerItemAdapter adapter = new ManagerItemAdapter(context, schedules);
+
+        ListView listView = (ListView) rootView.findViewById(R.id.manager_list);
+        listView.setAdapter(adapter);
 
         return rootView;
     }

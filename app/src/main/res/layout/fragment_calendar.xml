@@ -24,7 +24,8 @@
             android:textSize="50sp"
             android:textIsSelectable="false"
             android:paddingLeft="10sp"
-            android:paddingBottom="0dp" />
+            android:paddingBottom="0dp"
+            android:singleLine="true" />
 
         <TextClock
             android:layout_width="match_parent"

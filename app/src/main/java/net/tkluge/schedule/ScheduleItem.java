@@ -16,8 +16,7 @@ public class ScheduleItem {
                   time_start = "0:00 AM",
                   time_end = "",
                   detail = "",
-                  time_format = "",
-                  time_name = "";
+                  time_format = "";
     public static ScheduleItem fromJSON(JSONObject jsonObject) {
         ScheduleItem si = new ScheduleItem();
         try {
@@ -27,7 +26,6 @@ public class ScheduleItem {
             si.time_format = jsonObject.getString("time_format");
             si.time_start = jsonObject.getString("time_start");
             si.time_end = jsonObject.getString("time_end");
-            si.time_name = jsonObject.getString("time_name");
         } catch (JSONException e) {
 
         }

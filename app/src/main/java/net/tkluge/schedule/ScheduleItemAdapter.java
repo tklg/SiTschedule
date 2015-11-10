@@ -57,22 +57,33 @@ public class ScheduleItemAdapter extends ArrayAdapter<ScheduleItem> {
                 time_end = null;
         try {
             Date date = null;
-            if (file.time_start.equals("12") && file.time_name.equalsIgnoreCase("pm")) {
-                time_start = "Noon";
-            } else if (file.time_start.equals("12") && file.time_name.equalsIgnoreCase("am")) {
-                time_start = "Midnight";
+            if (file.time_format.equals("12")) {
+                if (file.time_start.equals("12") && Integer.parseInt(file.time_end) > 12) {
+                    time_start = "Noon";
+                } else if (file.time_start.equals("12") && Integer.parseInt(file.time_end) <= 12) {
+                    time_start = "Midnight";
+                } else {
+                    time_start = Integer.toString(Integer.parseInt(file.time_start));
+                    if (Integer.parseInt(file.time_start) > 12) time_start = Integer.toString(Integer.parseInt(file.time_start) - 12);
+                    date = new SimpleDateFormat("HH").parse(time_start);
+                    time_start = new SimpleDateFormat("H:mm").format(date);
+                    time_start += " " + ((Integer.parseInt(file.time_start) > 12) ? "PM" : "AM");
+                }
+                time_end = Integer.toString(Integer.parseInt(file.time_end) - 12);
+            } else if (file.time_format.equals("24")) {
+                if (file.time_start.equals("12") && Integer.parseInt(file.time_end) > 12) {
+                    time_start = "Noon";
+                } else if (file.time_start.equals("12") && Integer.parseInt(file.time_end) < 12) {
+                    time_start = "Midnight";
+                } else {
+                    time_start = file.time_start;
+                    date = new SimpleDateFormat("HH").parse(time_start);
+                    time_start = new SimpleDateFormat("H:mm").format(date);
+                    time_start += " " + ((Integer.parseInt(time_start) > 12) ? "PM" : "AM");
+                }
+                time_end = file.time_end;
             } else {
-                date = new SimpleDateFormat("HH").parse(file.time_start);
-                time_start = new SimpleDateFormat("H:mm").format(date);
-                time_start += " " + file.time_name.toUpperCase();
-            }
-            if (file.time_end.equals("12") && file.time_name.equalsIgnoreCase("pm")) {
-                time_end = "Noon";
-            } else if (file.time_start.equals("12") && file.time_name.equalsIgnoreCase("am")) {
-                time_end = "Midnight";
-            } else {
-                date = new SimpleDateFormat("HH").parse(file.time_end);
-                time_end = new SimpleDateFormat("H:mm").format(date);
+
             }
         } catch (Exception e) {
 

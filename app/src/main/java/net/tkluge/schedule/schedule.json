@@ -6,10 +6,9 @@
 	  {
 		"name": "",
 		"detail": "",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "0",
 		"time_end": "",
-		"time_name": "AM",
 		"location": ""
 	  }
 	]
@@ -21,46 +20,41 @@
 	  {
 		"name": "Calculus 1A",
 		"detail": "MA121B/Lecture",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "9",
 		"time_end": "",
-		"time_name": "AM",
 		"location": "X106"
 	  },
 	  {
 		"name": "Knowledge, Nature, Culture",
 		"detail": "CAL105E/Lecture",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "10",
 		"time_end": "",
-		"time_name": "AM",
 		"location": "BC220"
 	  },
 	  {
 		"name": "Mechanics",
 		"detail": "PEP111B/Lecture",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "11",
 		"time_end": "",
-		"time_name": "AM",
 		"location": "BC122"
 	  },
 	  {
 		"name": "Intro Comp Sci Honors",
 		"detail": "CS181A/Lecture",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "12",
 		"time_end": "",
-		"time_name": "PM",
 		"location": "X104"
 	  },
 	  {
 		"name": "Intro to Web Dev",
 		"detail": "CS146B/Lecture",
-		"time_format": "hour",
-		"time_start": "2",
+		"time_format": "12",
+		"time_start": "14",
 		"time_end": "",
-		"time_name": "PM",
 		"location": "E330"
 	  }
 	]
@@ -72,46 +66,41 @@
 	  {
 		"name": "Calculus 1A",
 		"detail": "MA121RE/Recitation",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "9",
 		"time_end": "",
-		"time_name": "AM",
 		"location": "Peirce 220"
 	  },
 	  {
 		"name": "Intro Comp Sci Honors",
 		"detail": "CS181LA/Lab",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "11",
-		"time_end": "",
-		"time_name": "AM",
-		"location": "B514"
+		"time_end": "13",
+		"location": "BC 640"
 	  },
 	  {
 		"name": "Intro to Web Dev",
 		"detail": "CS146B/Lecture",
-		"time_format": "hour",
-		"time_start": "2",
+		"time_format": "12",
+		"time_start": "14",
 		"time_end": "",
-		"time_name": "PM",
 		"location": "E330"
 	  },
 	  {
 		"name": "Mechanics",
 		"detail": "PEP111RF/Recitation",
-		"time_format": "hour",
-		"time_start": "3",
+		"time_format": "12",
+		"time_start": "15",
 		"time_end": "5",
-		"time_name": "PM",
 		"location": "E229"
 	  },
 	  {
 		"name": "Freshman Quiz",
 		"detail": "",
-		"time_format": "hour",
-		"time_start": "5",
+		"time_format": "12",
+		"time_start": "17",
 		"time_end": "",
-		"time_name": "PM",
 		"location": ""
 	  }
 	]
@@ -123,28 +112,25 @@
 	  {
 		"name": "Calculus 1A",
 		"detail": "MA121RE/Recitation",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "9",
 		"time_end": "",
-		"time_name": "AM",
 		"location": "X106"
 	  },
 	  {
 		"name": "Knowledge, Nature, Culture",
 		"detail": "CAL105E/Lecture",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "10",
 		"time_end": "12",
-		"time_name": "AM",
 		"location": "BC220"
 	  },
 	  {
 		"name": "Intro Comp Sci Honors",
 		"detail": "CS181A/Lecture",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "12",
 		"time_end": "",
-		"time_name": "PM",
 		"location": "X119"
 	  }
 	]
@@ -156,28 +142,25 @@
 	  {
 		"name": "Calculus 1A",
 		"detail": "MA121B/Lecture",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "9",
 		"time_end": "",
-		"time_name": "AM",
 		"location": "X106"
 	  },
 	  {
 		"name": "Intro Comp Sci Honors",
 		"detail": "CS181A/Lecture",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "12",
 		"time_end": "",
-		"time_name": "PM",
 		"location": "X104"
 	  },
 	  {
 		"name": "Intro to Web Dev",
 		"detail": "CS146B/Lecture",
-		"time_format": "hour",
-		"time_start": "2",
+		"time_format": "12",
+		"time_start": "14",
 		"time_end": "",
-		"time_name": "PM",
 		"location": "E330"
 	  }
 	]
@@ -189,28 +172,25 @@
 	  {
 		"name": "Calculus 1A",
 		"detail": "MA121RE/Recitation",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "9",
 		"time_end": "",
-		"time_name": "AM",
 		"location": "Peirce 220"
 	  },
 	  {
 		"name": "Mechanics",
 		"detail": "PEP111B/Lecture",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "10",
 		"time_end": "",
-		"time_name": "AM",
 		"location": "BC122"
 	  },
 	  {
 		"name": "Freshman Quiz",
 		"detail": "",
-		"time_format": "hour",
-		"time_start": "3",
+		"time_format": "12",
+		"time_start": "15",
 		"time_end": "",
-		"time_name": "PM",
 		"location": ""
 	  }
 	]
@@ -222,10 +202,9 @@
 	  {
 		"name": "",
 		"detail": "",
-		"time_format": "hour",
+		"time_format": "12",
 		"time_start": "0",
 		"time_end": "",
-		"time_name": "AM",
 		"location": ""
 	  }
 	]
